@@ -1,0 +1,1 @@
+Initialize new Kali Linux environment using Vagrant
