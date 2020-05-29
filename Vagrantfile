@@ -56,6 +56,9 @@ Vagrant.configure("2") do |config|
     # Copy .bash_aliases
     config.vm.provision "file", source: ".bash_aliases", destination: ".bash_aliases"
 
+    # Copy openvas-update.sh
+    config.vm.provision "file", source: "openvas-update.sh", destination: "openvas-update.sh"
+
     # Reload after provision
     config.vm.provision :reload
 end
