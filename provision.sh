@@ -107,3 +107,7 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microso
 sudo apt-get -y install apt-transport-https
 sudo apt-get -y update
 sudo apt-get -y install code
+
+# Install OWASP Zed Attack Proxy (ZAP)
+echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}zaproxy${NORMAL}"
+sudo apt-get install zaproxy
