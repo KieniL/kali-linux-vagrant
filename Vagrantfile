@@ -19,15 +19,15 @@ Vagrant.configure("2") do |config|
     config.vm.provider "virtualbox" do |vb|
 
         # Virtualbox VM name
-        vb.name = "test1"
+        vb.name = "kali-websec"
 
         # Show VirtualBox GUI when booting the machine
         vb.gui = true
     
         # Customize the amount of memory on the VM:
-        vb.memory = "1024"
+        #vb.memory = "1024"
         # vb.memory = "2048"
-        # vb.memory = "3072"
+        vb.memory = "3072"
         # vb.memory = "4096"
 
         # Number of CPU cores
@@ -48,7 +48,7 @@ Vagrant.configure("2") do |config|
     config.vbguest.auto_update = true
 
     # Provision the machine with a shell script
-    config.vm.provision "shell", path: "provision.sh", :args => "--keyboard=hr --timezone=Europe/Vienna"
+    config.vm.provision "shell", path: "provision.sh", :args => "--keyboard=at --timezone=Europe/Vienna"
 
     # Copy .bashrc
     config.vm.provision "file", source: ".bashrc", destination: ".bashrc"

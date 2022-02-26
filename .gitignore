@@ -1,3 +1,14 @@
+#Ignore everything
+*
+
+# Except
+!.bash_aliases
+!.bashrc
+!openvas-update.sh
+!provision.sh
+!README.md
+!Vagrantfile
+
 # OS-specific
 .DS_Store
 
