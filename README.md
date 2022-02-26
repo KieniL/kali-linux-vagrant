@@ -1,3 +1,5 @@
+Thanks to https://github.com/zsusac/kali-linux-vagrant
+
 Initialize new Kali Linux environment using Vagrant
 
 Provision:
