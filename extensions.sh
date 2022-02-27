@@ -21,11 +21,3 @@ code --install-extension yzane.markdown-pdf --force 2>/dev/null
 ## Markdown all in One
 echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}yzhang.markdown-all-in-one${NORMAL}"
 code --install-extension yzhang.markdown-all-in-one --force 2>/dev/null
-
-
-#install firefox plugins
-echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}foxyproxy${NORMAL}"
-wget https://addons.mozilla.org/firefox/downloads/file/3616824/foxyproxy_standard-7.5.1-an+fx.xpi
-firefox foxyproxy_standard-7.5.1-an+fx.xpi
-
-# ToDo: Add Visual Studio Code to Desktop
