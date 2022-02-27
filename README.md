@@ -23,6 +23,11 @@ Copy dotfiles:
 - .bashrc
 - .bash_aliases
 
+Install vscode extensions:
+- Eclipse Keymap
+- Markdown PDF
+- Markdown All in One
+
 ## Commands to use
 
 

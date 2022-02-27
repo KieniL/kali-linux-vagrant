@@ -111,3 +111,9 @@ sudo apt-get -y install code
 # Install OWASP Zed Attack Proxy (ZAP)
 echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}zaproxy${NORMAL}"
 sudo apt-get -y install zaproxy
+
+# Install Mozilla Observatory
+echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}observatory${NORMAL}"
+sudo apt-get -y install npm nodejs
+sudo apt-get -y update
+npm install -g observatory-cli

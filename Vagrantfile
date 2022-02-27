@@ -50,6 +50,9 @@ Vagrant.configure("2") do |config|
     # Provision the machine with a shell script
     config.vm.provision "shell", path: "provision.sh", :args => "--keyboard=at --timezone=Europe/Vienna"
 
+    # Provision the machine extensions with a shell script
+    config.vm.provision "shell", path: "extensions.sh", privileged: false
+
     # Copy .bashrc
     config.vm.provision "file", source: ".bashrc", destination: ".bashrc"
 
