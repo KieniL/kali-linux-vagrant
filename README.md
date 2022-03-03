@@ -17,7 +17,10 @@ Provision:
 - Install arachni
 - Install terminator
 - Install seclists
-- Install VSCode 
+- Install VSCode
+- Install ZAP
+- Install Burpsuite
+- Install Mozilla Observatory
 
 Copy dotfiles:
 - .bashrc
@@ -27,6 +30,8 @@ Install vscode extensions:
 - Eclipse Keymap
 - Markdown PDF
 - Markdown All in One
+- AsciiDoc
+- AsciiDoc Live Preview
 
 ## Commands to use
 
@@ -36,3 +41,9 @@ Install vscode extensions:
 
 ### rerun shell scripts
 <code>vagrant provision</code>
+
+### up with provision
+<code>vagrant up --provision</code>
+
+### destroy vm
+<code>vagrant destroy</code>

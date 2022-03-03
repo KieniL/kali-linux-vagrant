@@ -112,6 +112,10 @@ sudo apt-get -y install code
 echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}zaproxy${NORMAL}"
 sudo apt-get -y install zaproxy
 
+# Install Burpsuite
+echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}burpsuite${NORMAL}"
+sudo apt-get -y install burpsuite
+
 # Install Mozilla Observatory
 echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}observatory${NORMAL}"
 sudo apt-get -y install npm nodejs

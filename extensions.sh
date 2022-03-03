@@ -21,3 +21,12 @@ code --install-extension yzane.markdown-pdf --force 2>/dev/null
 ## Markdown all in One
 echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}yzhang.markdown-all-in-one${NORMAL}"
 code --install-extension yzhang.markdown-all-in-one --force 2>/dev/null
+
+## AsciiDoc
+echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}asciidoctor.asciidoctor-vscode${NORMAL}"
+code --install-extension asciidoctor.asciidoctor-vscode --force 2>/dev/null
+
+## AsciiDocLive
+echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}stayfool.vscode-asciidoc${NORMAL}"
+code --install-extension stayfool.vscode-asciidoc --force 2>/dev/null
+
