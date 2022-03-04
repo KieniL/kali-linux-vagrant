@@ -1,12 +1,2 @@
-#Ignore everything
-*
-
-# Except
-!.bash_aliases
-!.bashrc
-!openvas-update.sh
-!provision.sh
-!README.md
-!Vagrantfile
-!extensions.sh
-!data/
+#Ignore .vagrant folder
+.vagrant
