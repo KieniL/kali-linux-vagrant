@@ -121,3 +121,8 @@ echo -e "\n\n ${GREEN}[+]${NORMAL} Installing ${GREEN}observatory${NORMAL}"
 sudo apt-get -y install npm nodejs
 sudo apt-get -y update
 npm install -g observatory-cli
+
+
+# Unzip rockyou.txt
+echo -e "\n\n ${GREEN}[+]${NORMAL} Unzipping ${GREEN}rockyout.txt.gz${NORMAL}"
+sudo gunzip /usr/share/wordlists/rockyou.txt.gz || true
