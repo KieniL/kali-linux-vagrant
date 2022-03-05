@@ -2,7 +2,8 @@ name: build asciidoc
 
 on:
   push:
-    branches: branches: [ master, main ]
+    branches: [ master, main ]
+    
 jobs:
   asciidoc_build:
     runs-on: ubuntu-18.04

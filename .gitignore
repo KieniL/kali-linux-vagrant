@@ -1,3 +1,4 @@
 #Ignore .vagrant folder
 .vagrant
 README.pdf
+.vscode
