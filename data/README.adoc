@@ -139,7 +139,9 @@ Dieses Kapitel sollte Fragen zum Thema Benutzerverwaltung bzw. Benutzersessions 
 * Kann man auf Ressourcen ohne Login zugreifen?
 
 *Prüfen welche Authentifikation genutzt wird*
+
 *Prüfen welche Tokens verwendet werden*
+
 *Prüfen ob Tokens ausgehebelt werden können*
 
 === Berechtigungskonzept
@@ -161,7 +163,9 @@ Typische Fragen:
 * Falls Schwachstellen gefunden wurden, wie können diese ausgebessert werden?
 
 *Testen ob Command Injection möglich ist*
+
 *Testen ob SQL Injection möglich ist*
+
 *Testen ob Directory Traversal möglich ist*
 
 [appendix]
