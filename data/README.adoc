@@ -52,43 +52,65 @@ Hier sollten die vorgefundenen Schwachstellen zusammengefasst werden. Ebenso sol
 
 === Verbindungssicherheit
 
-TLS-Versionen
+Was kann zur Verbindungssicherheit gesagt werden?
+
+* HTTPS/TLS Konfiguration
+* wurden Massnahmen zur automatischen Gewährleistung der Verbindungssicherheit (HSTS, CSP, etc.) gesetzt?
+* kann z.B. mittels ##https://testssl.sh/## oder ##https://www.ssllabs.com/ssltest/## getestet werden
+
+*Was teste ich bei TLS-Versionen?*
 
 [source,bash,subs="attributes"]
 ----
-# 1
+# Version 1
 openssl s_client -connect {url}:{port} -tls1
-# 1.1
+# Version 1.1
 openssl s_client -connect {url}:{port} -tls1_1
-# 1.2
+# Version 1.2
 openssl s_client -connect {url}:{port} -tls1_2
-# 1.3
+# Version 1.3
 openssl s_client -connect {url}:{port} -tls1_3
 ----
 
 === Verwendete HTTP Header
+
+Am besten Ausgabe der verwendeten HTTP-Header (z.b. auf der Startseite oder innerhalb des eingeloggten Bereichs):
+
+*Was teste ich bei httpHeader?*
 
 [source,bash,subs="attributes"]
 ----
 observatory {url} --format=report
 ----
 
+*plus testssl.sh und Observatory Page*
+
+Anschließend Diskussion der vorgefundenen HTTP-Header. Welche sicherheitsrelevanten Header wurden vorgefunden, welche haben gefehlt. Welche Empfehlungen gibt es? Siehe auch Mozilla Observatory oder https://securityheaders.com/
+
+
 === Software-Enumeration
 
-Test des Pings
+Dieses Kapitel soll die vorgefundenen Softwarekomponenten erwähnen. Hier sollte überprüft werden, ob diese auf dem letzten sicherheitsrelevanten Patch-Level sind bzw. ob es bekannte Exploits für diese Softwarekomponenten bekannt sind.
+
+* Welche Software wurde in welcher Version vorgefunden?
+* Gibt es bekannte Schwachstellen?
+* Wurden weitere Artefakte (##.git##, Admin-Tools, Backup-Files) vorgefunden?
+
+
+*Test des Pings*
 
 [source,bash,subs="attributes"]
 ----
 ping {url}
 ----
 
-Portscan
+*Portscan*
 [source,bash,subs="attributes"]
 ----
 sudo nmap -sS -sC -sV -O {url}
 ----
 
-Verzeichnisscan
+*Verzeichnisscan*
 [source,bash,subs="attributes"]
 ----
 gobuster dir -u {protocol}://{url}:{port} -w {wordlist_path}
@@ -102,6 +124,8 @@ Dieses Kapitel sollte Fragen zum Thema Benutzerverwaltung bzw. Benutzersessions 
 * Gibt es Auffälligkeiten bei Login/Logout?
 * Falls Tokens verwendet werden? Wie sind diese aufgebaut? Gibt es hier Probleme?
 * Kann man auf Ressourcen ohne Login zugreifen?
+
+*Prüfen welche 
 
 === Berechtigungskonzept
 
