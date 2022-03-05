@@ -114,6 +114,21 @@ sudo nmap -sS -sC -sV -O {url}
 gobuster dir -u {protocol}://{url}:{port} -w {wordlist_path}
 ----
 
+*Burpsuite Test*
+
+*Owasp Test*
+
+*Automatischer Owasp ZAP Base-Test*
+
+*Automatischer Owasp ZAP API-Test*
+
+*Prüfen ob WAF vorhanden ist*
+[source,bash,subs="attributes"]
+----
+wafw00f {protocol}://{url} -a
+----
+
+
 === Session, Login/Logout, Authentication
 
 Dieses Kapitel sollte Fragen zum Thema Benutzerverwaltung bzw. Benutzersessions beleuchten.
@@ -123,7 +138,9 @@ Dieses Kapitel sollte Fragen zum Thema Benutzerverwaltung bzw. Benutzersessions 
 * Falls Tokens verwendet werden? Wie sind diese aufgebaut? Gibt es hier Probleme?
 * Kann man auf Ressourcen ohne Login zugreifen?
 
-*Prüfen welche 
+*Prüfen welche Authentifikation genutzt wird*
+*Prüfen welche Tokens verwendet werden*
+*Prüfen ob Tokens ausgehebelt werden können*
 
 === Berechtigungskonzept
 
@@ -142,6 +159,10 @@ Typische Fragen:
 * Gibt es verwundbare Operationen?
 * Wie wurden diese getestet?
 * Falls Schwachstellen gefunden wurden, wie können diese ausgebessert werden?
+
+*Testen ob Command Injection möglich ist*
+*Testen ob SQL Injection möglich ist*
+*Testen ob Directory Traversal möglich ist*
 
 [appendix]
 = The Appendix
