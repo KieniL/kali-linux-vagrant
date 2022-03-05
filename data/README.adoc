@@ -18,8 +18,6 @@
 toc::[]
 
 
-= Pentesting
-
 == Executive Summary
 In einfacher Sprache sollte der Inhalt des Berichts zusammengefasst werden. Ziel dieses Textes sind nicht Techniker, sondern z.B. Management. Nach Lesen des Executive Summaries sollte dieses den Umfang und die Ergebnisse bzw. die Auswirkungen des Penetration-Tests verstehen.
 
