@@ -1,4 +1,3 @@
-= Pentesting of {url}
 :doctype: book
 :author: KIENAST Lukas
 :chapter-label:
@@ -10,8 +9,12 @@
 :url: website.me
 :protocol: http
 :port: 80
-
 :wordlist_path: wordlist.txt
+
+
+= Pentesting of {url}
+{author}
+{docdate}
 
 <<<
 
