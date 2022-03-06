@@ -1,7 +1,7 @@
 extends: base
 page:
   layout: portrait
-  margin: [0.75in, 1in, 0.75in, 1in]
+  margin: [0.75in]
   size: Letter
 base:
   font_color: #565656
@@ -9,13 +9,30 @@ base:
   font_size: 12
 title:
   page_align: center
-  # page_background_color: #303336
-  # page_logo_align: center
   page_title_top: 45%
-  # page_title_font_size: 28
-  # page_title_font_color: #cccccc
-  # page_subtitle_font_size: 22
-  # page_subtitle_font_color: #999999
-  # page_subtitle_font_style: bold_italic
-  # page_authors_margin_top: 13.125
-  # page_authors_font_color: #999999
+header:
+  height: 0.5in
+  line-height: 1
+  font_size: 13
+  border-color: #000000
+  recto:
+    left:
+      content: '{section-or-chapter-title}'
+  verso:
+    left:
+      content: '{section-or-chapter-title}'
+footer:
+  height: $header-height
+  line-height: $header-line-height
+  font_size: $header-font_size
+  border-color: $header-border-color
+  recto:
+    right: 
+      content: '{page-number}'
+    left:
+      content: '{doctitle}'
+  verso:
+    right: 
+      content: '{page-number}'
+    left: 
+      content: '{doctitle}'
