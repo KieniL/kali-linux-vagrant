@@ -1,0 +1,21 @@
+extends: base
+page:
+  layout: portrait
+  margin: [0.75in, 1in, 0.75in, 1in]
+  size: Letter
+base:
+  font_color: #565656
+  font_family: Times-Roman
+  font_size: 12
+title:
+  page_align: center
+  # page_background_color: #303336
+  # page_logo_align: center
+  page_title_top: 45%
+  # page_title_font_size: 28
+  # page_title_font_color: #cccccc
+  # page_subtitle_font_size: 22
+  # page_subtitle_font_color: #999999
+  # page_subtitle_font_style: bold_italic
+  # page_authors_margin_top: 13.125
+  # page_authors_font_color: #999999
